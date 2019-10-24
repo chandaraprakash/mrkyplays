@@ -34,11 +34,6 @@ private final BidRepository bidRepository;
 	}
 
 	@Override
-	public String greet(String name) {
-		return name == null ? "Hello World!" : "Hello " + name + "!";
-	}
-
-	@Override
 	public List<User> getUser() {		
 		
 		return userRepository.findAll()
